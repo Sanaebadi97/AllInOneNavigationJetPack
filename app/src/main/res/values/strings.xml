@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AllInOneNavigationJetPack</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_next">NEXT</string>
+    <string name="btn_skip">SKIP</string>
+    <string name="btn_finish">FINISH</string>
+    <string name="btn_start">START</string>
+    <string name="name_app">Navigation/JetPack</string>
+</resources>

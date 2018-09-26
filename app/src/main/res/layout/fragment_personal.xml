@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MainFragment">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation_view"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="anim/personal_character.json"
+        app:lottie_loop="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lottie_animation_view">
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/btn_next"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size"/>
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/btn_skip"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_text_size"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_anim_graph"
+            app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/personalFragment"
+        android:name="sanaebadi.info.allinonenavigationjetpack.fragment.PersonalFragment"
+        android:label="fragment_personal"
+        tools:layout="@layout/fragment_personal">
+
+        <action
+            android:id="@+id/to_pumped"
+            app:destination="@id/pumpedUpFragment"/>
+        <action
+            android:id="@+id/person_to_skip"
+            app:destination="@id/skipFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="sanaebadi.info.allinonenavigationjetpack.fragment.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/to_personal"
+            app:destination="@id/personalFragment"/>
+        <action
+            android:id="@+id/main_to_skip"
+            app:destination="@id/skipFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pumpedUpFragment"
+        android:name="sanaebadi.info.allinonenavigationjetpack.fragment.PumpedUpFragment"
+        android:label="fragment_pumped_up"
+        tools:layout="@layout/fragment_pumped_up">
+        <action
+            android:id="@+id/pumped_to_skip"
+            app:destination="@id/skipFragment"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/skipFragment"
+        android:name="sanaebadi.info.allinonenavigationjetpack.fragment.SkipFragment"
+        android:label="fragment_like"
+        tools:layout="@layout/fragment_skip">
+        <action
+            android:id="@+id/skip_to_main"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <argument
+            android:name="name_app"
+            android:defaultValue="null"
+            app:argType="string"/>
+    </fragment>
+</navigation>
