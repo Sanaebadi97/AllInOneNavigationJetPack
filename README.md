@@ -22,7 +22,7 @@ Passing data between destinations can be done in a safe way with a new plugin ca
 You can define what arguments the Fragments in the 
 navigation graph accept from within the navigation file itself.
 
-and use lottie library for animation too:)
+and use lottie library for animation too ;)
 
 [Navigation JetPack](https://developer.android.com/topic/libraries/architecture/navigation/)
 
