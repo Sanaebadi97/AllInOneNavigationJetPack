@@ -9,7 +9,7 @@ __Navigation JetPack__
 ***__The Navigation Architecture Component__***
 
 Navigating between ```activities``` and/or ```fragments``` has never been easy.
-Now, with the Navigation library and the navigation viewer built into Android Studio, 
+Now, with the Navigation library and the ```navigation``` viewer built into Android Studio, 
 you can visually design how your screens are connected to one another.
 Many people have noticed that this is similar to
 Storyboards in Apple’s Interface Builder for iOS app development.
