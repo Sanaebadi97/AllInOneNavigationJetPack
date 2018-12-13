@@ -20,7 +20,7 @@ The great thing about this is that you can define animations in the visual edito
 The library even handles deep linking into your app. 
 Passing data between destinations can be done in a safe way with a new plugin called safeargs. 
 You can define what arguments the Fragments in the 
-navigation graph accept from within the navigation file itself.
+```navigation graph``` accept from within the navigation file itself.
 
 and use lottie library for animation too ;)
 
