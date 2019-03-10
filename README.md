@@ -1,7 +1,7 @@
 # AllInOneNavigationJetPack
 # __Navigation JetPack__
 
-__Demo__
+# __Demo__
 
 ![20180925_204341](https://user-images.githubusercontent.com/26750131/46030903-73e0c200-c0c5-11e8-96d2-44cae2b210d5.gif)
 
